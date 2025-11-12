@@ -6,26 +6,30 @@
 }
 
 :root {
-    /* Colors from Figma */
+    /* Colors from Figma - Exact values */
     --color-white: #FFFFFF;
-    --color-black: #282938;
+    --color-black: #000000;
+    --color-heading: #282938;
+    --color-text-dark: #232536;
     --color-purple: #9747FF;
-    --color-light-purple: #8991DC;
-    --color-bg-light: #F6F3EF;
+    --color-purple-light: #8991DC;
+    --color-bg-cream: #F6F3EF;
     --color-orange: #C76A47;
     --color-grey: #D2DCD3;
-    --color-light-blue: #ADD6DC;
-    --color-text-grey: #232536;
+    --color-blue-light: #ADD6DC;
+    --color-blue-medium: #96BCC5;
+    --color-blue-soft: #89C5CC;
     
-    /* Typography */
-    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-header: 'Inter', sans-serif;
+    /* Typography - Exact from Figma */
+    --font-primary: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-body);
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.5em;
+    font-weight: 400;
     color: var(--color-black);
     background-color: var(--color-white);
     overflow-x: hidden;
@@ -67,8 +71,10 @@ body {
 .logo-text {
     display: flex;
     gap: 8px;
+    font-family: var(--font-primary);
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 400;
+    line-height: 1.22em;
 }
 
 .logo-l,
@@ -92,8 +98,10 @@ body {
 }
 
 .nav-link {
+    font-family: var(--font-body);
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.5em;
     color: var(--color-black);
     text-decoration: none;
     position: relative;
@@ -113,7 +121,7 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--color-purple);
+    color: var(--color-purple-light);
 }
 
 .nav-link:hover::after,
@@ -123,7 +131,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--color-light-blue) 0%, var(--color-light-purple) 100%);
+    background: linear-gradient(135deg, var(--color-blue-light) 0%, var(--color-purple-light) 100%);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -154,10 +162,11 @@ body {
 }
 
 .hero-title {
-    font-family: var(--font-header);
+    font-family: var(--font-body);
     font-size: 128px;
     font-weight: 700;
-    line-height: 0.85;
+    line-height: 0.66em;
+    letter-spacing: -0.02em;
     color: var(--color-black);
     margin: 0;
 }
@@ -183,11 +192,12 @@ body {
 }
 
 .project-title {
-    font-size: 44px;
+    font-family: var(--font-body);
+    font-size: 32px;
     font-weight: 700;
+    line-height: 1.375em;
     color: var(--color-black);
     margin-bottom: 30px;
-    line-height: 1.2;
 }
 
 .project-subtitle {
@@ -198,8 +208,10 @@ body {
 }
 
 .project-description {
-    font-size: 18px;
-    line-height: 1.6;
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
     color: var(--color-black);
     margin-bottom: 30px;
 }
@@ -215,14 +227,16 @@ body {
 .btn-view {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     padding: 14px 32px;
     background-color: transparent;
-    border: 1px solid var(--color-light-purple);
+    border: 1px solid var(--color-purple-light);
     border-radius: 4px;
     color: var(--color-black);
-    font-size: 18px;
+    font-family: var(--font-primary);
+    font-size: 16px;
     font-weight: 500;
+    line-height: 1.5em;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -246,7 +260,7 @@ body {
 }
 
 .project-hero {
-    background: linear-gradient(135deg, var(--color-light-blue) 0%, var(--color-light-purple) 100%);
+    background: linear-gradient(135deg, var(--color-blue-light) 0%, var(--color-purple-light) 100%);
     padding: 80px 0;
     margin-bottom: 60px;
 }
@@ -298,7 +312,7 @@ body {
 
 /* About Page */
 .about-hero {
-    background: linear-gradient(135deg, var(--color-light-blue) 0%, var(--color-light-purple) 100%);
+    background: linear-gradient(135deg, var(--color-blue-light) 0%, var(--color-purple-light) 100%);
     padding: 100px 0;
 }
 
@@ -342,7 +356,7 @@ body {
 
 .skill-card {
     padding: 40px;
-    background-color: var(--color-bg-light);
+    background-color: var(--color-bg-cream);
     border-radius: 8px;
     text-align: center;
     transition: all 0.3s ease;
@@ -373,7 +387,7 @@ body {
 
 /* Contact Page */
 .contact-hero {
-    background: linear-gradient(135deg, var(--color-light-blue) 0%, var(--color-light-purple) 100%);
+    background: linear-gradient(135deg, var(--color-blue-light) 0%, var(--color-purple-light) 100%);
     padding: 100px 0;
 }
 
