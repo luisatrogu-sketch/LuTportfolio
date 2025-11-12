@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luisatrogu-sketch.github.io/LuTportfolio/sitemap.xml
+

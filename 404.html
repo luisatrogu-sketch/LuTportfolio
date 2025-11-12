@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Luisa Trogu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .error-page {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .error-content h1 {
+            font-size: 120px;
+            font-weight: 700;
+            color: var(--color-purple);
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        .error-content h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--color-black);
+        }
+        .error-content p {
+            font-size: 18px;
+            color: var(--color-black);
+            margin-bottom: 40px;
+        }
+        @media (max-width: 768px) {
+            .error-content h1 {
+                font-size: 80px;
+            }
+            .error-content h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-text">
+                        <span class="logo-l">L</span>
+                        <span class="logo-t">T</span>
+                    </div>
+                </a>
+                <nav class="nav">
+                    <a href="about.html" class="nav-link">About me</a>
+                    <a href="contact.html" class="nav-link">Contacts</a>
+                    <a href="index.html" class="nav-link">Projects</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Error Page -->
+    <div class="error-page">
+        <div class="error-content">
+            <h1>404</h1>
+            <h2>Page Not Found</h2>
+            <p>Oops! The page you're looking for doesn't exist.<br>It might have been moved or deleted.</p>
+            <a href="index.html" class="btn-view">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Go Back Home</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
